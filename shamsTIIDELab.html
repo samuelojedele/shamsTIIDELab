@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Loop to iterate from 1 to 200
+      for (i = 1; i <= 200; i++) {
+        // Declaration and assigning of variable of the exception
+        let shams = i % 6;
+        let tiidelab = i % 8;
+
+        // condition 1: when i is divisible by both 6 and 8
+        if (shams === 0 && tiidelab === 0) {
+          console.log("ShamsTIIDELAB");
+        }
+
+        // condition 2: when i is divisible by 6
+        else if (shams === 0) {
+          console.log("Shams");
+        }
+
+        // condition 3: when i is divisible by 8
+        else if (tiidelab === 0) {
+          console.log("TIIDELAB");
+        }
+
+        // Outputing i
+        else {
+          console.log(`${i}`);
+        }
+      }
+    </script>
+  </body>
+</html>
