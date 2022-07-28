@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // prompting
+      let demension = prompt(
+        "Enter the dimension you want your Chessboard to \nEnter 8 for 8 x 8 demension "
+      );
+
+      // function declaration
+      function chessboard(chessBoardVariable) {
+        //initializing empty string
+        let output = "";
+
+        // Loop to output the either " " or "#"
+        for (let i = 0; i < chessBoardVariable; i++) {
+          for (let j = 0; j < chessBoardVariable; j++) {
+            (i + j) % 2 == 0 ? (output += " ") : (output += "#");
+          }
+          output += "\n";
+        }
+
+        // logging the output
+        console.log(output);
+      }
+
+      // function call
+      console.log(chessboard(demension));
+    </script>
+  </body>
+</html>
